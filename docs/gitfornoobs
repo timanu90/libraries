@@ -1,0 +1,16 @@
+to commit a file use:
+
+git add <file or dir>
+git commit -m "some_message"
+
+#at first time create a temporary backup     ( change user and project)
+git remote add origin https://github.com/user_name/project.git
+
+
+#if dont wanna to push to master change branch
+git push origin master
+
+
+
+#git copy repository to local file system
+git clone -b master https://github.com/user_name/project.git
