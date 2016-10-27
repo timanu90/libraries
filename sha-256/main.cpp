@@ -9,17 +9,24 @@ void print_byte_buffer(BYTE* buf)
 {
 	for(int i=0; i<32;i++)
 	{
-		printf("%x", buf[i]);
+		printf("%02X", buf[i]);
 	}
 	printf("\n");
 }
 
 int main(int argc, char** argv)
 {
-	BYTE str[] = {"My SHA Lib"};
+	
+	if(argc < 2)
+	{
+		printf("error!!!\n\n\t\t./sha <message>\n\n");
+		return 1;
+	}
+
+	int strlenght = strlen(argv[1]);
 	BYTE outBuff[SHA256_BLOCK_SIZE];
 
-	compute_sha_256(str,strlen((char*)str),outBuff);
+	compute_sha_256((BYTE*)argv[1],strlenght,outBuff);
 
 	print_byte_buffer(outBuff);
 
