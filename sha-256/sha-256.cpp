@@ -1,14 +1,9 @@
 /**
- * Copyright(c) Critical Software SA (http://www.criticalsoftware.com)
  *
- * <B>SVN File URL:</B> $URL$
- *
- * <B>SVN Revision:</B> $Rev$
- *
- * @file sha-256.c
+ * @file sha-256.h
  * @ingroup 
- * @brief sha-256 hash function implementation File
- * @author tvasconcelos
+ * @brief sha-256 hash function Header File
+ * @author Tiago Vasconcelos
  * @date 27-10-2016
  *
  */
